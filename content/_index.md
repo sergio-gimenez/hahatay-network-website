@@ -1,8 +1,8 @@
 ---
-title: 'Test'
+title: 'Hahatay Network'
 showTableOfContents: false
 showDate: false
-layout: "simple"
+layout: "blog"
 ---
 
-Brief explanation of what is this
+Providing affordable connectivity to the associative tissue of [Hahatay](https://hahatay.org) since 2021

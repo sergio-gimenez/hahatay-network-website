@@ -11,18 +11,18 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
-  pageRef = "posts"
+  name = "🤔 About"
+  pageRef = "about"
   weight = 10
 
 [[main]]
-  name = "Categories"
-  pageRef = "categories"
+  name = "📰 News"
+  pageRef = "news"
   weight = 20
 
 [[main]]
-  name = "Tags"
-  pageRef = "tags"
+  name = "🛠 Technical Docs"
+  pageRef = "technical_docs"
   weight = 30
 
 [[main]]
