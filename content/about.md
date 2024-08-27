@@ -46,5 +46,5 @@ The project has received funds from:
   * Grant 2023-A024 (5000€)
   * Grant 2024-A027 (4447.50)
 
-* And the [Internet Society Catalan Chapter](https://www.isoc.cat/) has supported the project financially through the Beyond-the-Net small grant program, further enhancing its impact and reach.
+* And the [Internet Society Catalan Chapter](https://www.isoc.cat/) has supported the project financially through the [Beyond-the-Net small grant program](https://www.isocfoundation.org/project/a-community-network-for-hahatay-gandiol/).
   * Grant 2024 (4997€)
