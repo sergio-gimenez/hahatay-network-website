@@ -1,8 +1,7 @@
 ---
-title: "Setting Up Mesh Network with OpenWrt"
-date: 2023-03-16T00:00:00Z
+title: "Setting Up Mesh Network with OpenWrt V2"
+date: 2023-03-16
 ---
-
 
 Very good Tutorial to understand and deploy mesh networks with OpenWrt: [Video](https://www.youtube.com/watch?v=vVoZppb_FR0). Very recommended to understand what is a mesh network and how to deploy them.
   * **[UNTESTED]** Repo for automating steps shown in the video by using bash scripts: [Github repo](https://github.com/onemarcfifty/openwrt-mesh) 
