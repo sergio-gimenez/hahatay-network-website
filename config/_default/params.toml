@@ -6,7 +6,7 @@
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
 colorScheme = "slate"
-defaultAppearance = "light" # valid options: light or dark
+defaultAppearance = "light"  # valid options: light or dark
 autoSwitchAppearance = false
 
 enableSearch = true
@@ -18,7 +18,7 @@ enableImageWebp = true
 fingerprintAlgorithm = "sha256"
 
 [header]
-layout = "basic" # valid options: basic, hamburger, hybrid, custom
+layout = "basic"               # valid options: basic, hamburger, hybrid, custom
 logo = "img/logo.jpg"
 logoDark = "img/dark-logo.jpg"
 showTitle = true
@@ -30,7 +30,7 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "profile"    # valid options: page, profile, custom
+layout = "profile" # valid options: page, profile, custom
 showRecent = false
 recentLimit = 2
 
@@ -71,9 +71,9 @@ showTermCount = true
 # site = "ABC12345"
 
 [plausibleAnalytics]
-# domain = "blog.yoursite.com"
-# event = ""
-# script = ""
+domain = "hahatay.network"
+event = "https://plausible.sergiogimenez.com/api/event"
+script = "https://plausible.sergiogimenez.com/js/script.js"
 
 [verification]
 # google = ""
