@@ -14,5 +14,5 @@ Please, find also below  the presentation slides and the [final text](./files/Co
 
 📊 Key Resources:
 
-* [Presentation Slides](./files/IEEE-CTU-Presentation-Hahatay-Network.odp)
-* [Full Application](./files/Connected_the_unconnected_application_final.pdf)
+* [Presentation Slides](files/IEEE-CTU-Presentation-Hahatay-Network.odp)
+* [Full Application](files/Connected_the_unconnected_application_final.pdf)
