@@ -4,12 +4,11 @@
 
 baseURL = "https://hahatay.network/"
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
-
-
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
