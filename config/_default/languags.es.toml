@@ -1,0 +1,25 @@
+languageCode = "es"
+languageName = "Español"
+languageDirection = "ltr"
+weight = 2
+
+title = "Hahatay Network"
+copyright = "&copy; 2024 AUCOOP"
+
+[params]
+dateFormat = "2 January 2006"
+
+mainSections = ["noticias"]
+# description = "My awesome website"
+
+[params.author]
+name = "Hahatay Network"
+# image = "img/author.jpg"
+headline = "Una red comunitaria impulsada por voluntarios"
+# bio = "A little bit about you"
+links = [
+  { link = "https://hahatay.org/es/inicio/" },
+  { github = "https://github.com/aucoop/hahatay-community-network" },
+  { instagram = "https://www.instagram.com/hahataygandiol/" },
+  { linkedin = "https://www.linkedin.com/company/hahatay-gandiol" }
+]

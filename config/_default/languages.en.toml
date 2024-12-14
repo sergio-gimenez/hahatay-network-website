@@ -4,13 +4,12 @@ languageDirection = "ltr"
 weight = 1
 
 title = "Hahatay Network"
-# copyright = "Copy, _right?_ :thinking_face:"
+copyright = "&copy; 2024 AUCOOP"
 
 [params]
   dateFormat = "2 January 2006"
 
   mainSections = ["news"]
-  # description = "My awesome website"
 
 [params.author]
   name = "Hahatay Network"
