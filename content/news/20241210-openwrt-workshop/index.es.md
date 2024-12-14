@@ -12,6 +12,8 @@ Estamos usando el Xiaomi Mi Router 4C, que es la mejor relación calidad-precio 
 
 Pronto documentaremos una guía sobre cómo flashear OpenWRT en estos routers en nuestra sección de documentación técnica. Si estás familiarizado con este tipo de cosas, por ahora, puedes consultar esta antigua publicación. El único problema que tienen es que solo funcionan a 2,4 GHz, pero dado que nuestro objetivo es cubrir una gran área y el ancho de banda nunca es superior a 8 Mbps, nos sirve.
 
+<!-- TODO Fix article ref for multi-lingual support -->
+
 ¡Estad atentos para más actualizaciones!
 
 ![us_in_the_office](images/us_in_the_office.jpg "Veteranos (derecha) enseñando a los nuevos miembros del equipo (izquierda) cómo flashear OpenWRT en los routers")
