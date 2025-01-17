@@ -2,6 +2,12 @@
 title: "Preparation de nouveaux noeuds wifi pour le réseau mesh"
 date: 2024-12-10
 author: "Sergio Giménez"
+categories:
+    - "nouvelles"
+tags:
+    - "mesh"
+    - "openwrt"
+    - "802.11s"
 ---
 
 

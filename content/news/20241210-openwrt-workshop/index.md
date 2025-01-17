@@ -2,6 +2,12 @@
 title: "Setting up new wifi nodes for the mesh network"
 date: 2024-12-10
 author: "Sergio Giménez"
+categories:
+    - "news"
+tags:
+    - "mesh"
+    - "openwrt"
+    - "802.11s"
 ---
 
 Last Tuesday we were setting up new routers to add more nodes to the mesh networks we currently have. In order to make the most work in advance possible before travelling to Senegal, we successfully installed OpenWRT in the routers. We chose OpenWRT because it's an open-source firmware that gives us complete control over the routers and includes built-in mesh networking capabilities, which are essential for our community network project.
