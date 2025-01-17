@@ -2,6 +2,12 @@
 title: "Preparando nuevos nodos wifi para la red mesh"
 date: 2024-12-10
 author: "Sergio Giménez"
+categories:
+    - "noticias"
+tags:
+    - "mesh"
+    - "openwrt"
+    - "802.11s"
 ---
 
 El martes pasado estábamos configurando nuevos routers para añadir más nodos a las redes mesh que tenemos actualmente. Para adelantar trabajo antes de viajar a Senegal, instalamos con éxito OpenWRT en los routers. Elegimos OpenWRT porque es un firmware de código abierto que nos da control total sobre los routers e incluye capacidades de redes mesh integradas, que son esenciales para nuestro proyecto de red comunitaria.

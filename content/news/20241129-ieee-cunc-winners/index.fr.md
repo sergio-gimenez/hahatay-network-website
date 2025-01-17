@@ -2,6 +2,12 @@
 title: "🏆 Prix du défi a IEEE CUNC 2024"
 date: 2024-11-28T14:45:00Z
 author: "Sergio Giménez"
+categories: 
+  - "nouvelles"
+tags: 
+  - "ieee"
+  - "cunc"
+  - "prix"
 ---
 
 Nous sommes fiers d'annoncer que notre équipe a remporté le Prix Hahatay Network dans le cadre du Défi IEEE CUNC. Le Défi IEEE CUNC est une compétition qui reconnaît les solutions de preuve de concept et de prototype qui répondent aux défis de l'internet du futur dans les zones mal desservies. Notre solution a été récompensée par le prix "Mention honorable" dans la catégorie de la preuve de concept.

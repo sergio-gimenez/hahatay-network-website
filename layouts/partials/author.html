@@ -1,0 +1,20 @@
+{{ if .Params.authors }}
+<div class="authors">
+    <div
+        class="text-xs uppercase font-bold text-neutral-500 dark:text-neutral-400 mb-2">
+        {{ i18n "authors.title" | default "AUTHORS" }}
+    </div>
+    {{ range .Params.authors }}
+    {{ with site.GetPage "authors" . }}
+    <div class="author mb-4">
+        <h4 class="font-bold text-lg">{{ .Params.name | markdownify | emojify
+            }}</h4>
+        {{ with .Params.bio }}
+        <p class="text-sm text-neutral-700 dark:text-neutral-400">{{ . |
+            markdownify | emojify }}</p>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}

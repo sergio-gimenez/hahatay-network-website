@@ -2,6 +2,12 @@
 title: "🏆 Premio en el Reto IEEE CUNC 2024"
 date: 2024-11-28T14:45:00Z
 author: "Sergio Giménez"
+categories: 
+  - "noticias"
+tags: 
+  - "ieee"
+  - "cunc"
+  - "award"
 ---
 
 Estamos orgullosos de anunciar que nuestro equipo ha ganado el Premio Hahatay Network en el Reto IEEE CUNC. El Reto IEEE CUNC es una competición que reconoce soluciones de prueba de concepto y prototipos que abordan los desafíos de la futura internet en áreas desatendidas. Nuestra solución ha sido galardonada con el premio "Mención Honorífica" en la categoría de prueba de concepto.

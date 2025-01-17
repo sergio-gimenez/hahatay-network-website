@@ -3,6 +3,7 @@ title: "⚒ Documentación Técnica"
 showTableOfContents: false
 showDate: false
 layout: "list"
+categories: "documentos-tecnicos"
 ---
 
 Esta sección contiene documentación técnica relacionada con el proyecto de la Red Hahatay. La documentación se extrae del [repositorio de GitHub de la Red Hahatay](https://github.com/aucoop/hahatay-community-network/wiki).
