@@ -2,7 +2,7 @@
 title: "Day -1: Setting everything up"
 date: 2025-01-17
 categories: 
-  - "travel-blog"
+  - "travel blog"
 tags:
   - "2025"
 authors:
