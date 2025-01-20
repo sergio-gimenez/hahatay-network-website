@@ -1,6 +1,6 @@
 ---
 title: "Día 1: Definiendo objetivos"
-date: 2025-01-17
+date: 2025-01-19
 categories: 
   - "blog de viaje"
 tags:

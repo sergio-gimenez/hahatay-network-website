@@ -1,6 +1,6 @@
 ---
 title: "Día 0: Día de viaje"
-date: 2025-01-17
+date: 2025-01-18
 categories: 
   - "travel blog"
 tags:
@@ -11,7 +11,7 @@ authors:
 
 The day of travel is always a day full of nerves. But good nerves. In the end, we've spent a lot of time working on this, so it's very normal to feel a bit anxious.
 
-![jaume_roger_sergio](images/jaume_roger_sergio.jpg "Jaume, Roger, and Sergio just before heading to the airport")
+![jaume_roger_sergio](images/jaume_sergio_roger_dia0.jpg "Jaume, Roger, and Sergio just before heading to the airport")
 
 The day started off a bit complicated right from the check-in counter. Jaume and I (Sergio) went to check in the suitcase. It weighed 26 kg, while the maximum allowed was 25. The woman marked it as "Heavy" but didn’t say anything else. She didn’t charge us extra, so we assumed that even though it was "Heavy," it was within the tolerance. Then, the woman at the counter asked us:
 
@@ -55,4 +55,4 @@ When we arrived at the airport, we passed through immigration without any issues
 
 A little while later, Bachir, the taxi driver, picked us up and drove us to Gandiol. There, Pablo and Rober were waiting for us. We gave each other a big hug after almost a year without seeing each other. We settled into our rooms and went to sleep, as we were exhausted.
 
-![taxi_bachir](images/taxi_bachir.jpg "The team in Bachir's taxi on the way to Gandiol")
+![taxi_bachir](images/taxi_bachir.png "The team in Bachir's taxi on the way to Gandiol")

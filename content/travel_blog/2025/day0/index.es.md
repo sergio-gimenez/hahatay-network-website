@@ -1,6 +1,6 @@
 ---
 title: "Día 0: Día de viaje"
-date: 2025-01-17
+date: 2025-01-18
 categories: 
   - "blog de viaje"
 tags:
@@ -12,7 +12,7 @@ authors:
 
 El día de viaje siempre es día de nervios. Pero nervios buenos. Al final hemos estado tiempo trabajando en esto y es muy normal que entren nervios.
 
-![jaume_roger_sergio](images/jaume_roger_sergio.jpg "Jaume Roger y Sergio justo antes de salir hacia el aeropuerto")
+![jaume_roger_sergio](images/jaume_sergio_roger_dia0.jpg "Jaume Roger y Sergio justo antes de salir hacia el aeropuerto")
 
 El día ya ha empezado un poco complicado desde el primer momento en el mostrador de facturación. Hemos ido Jaume y yo (Sergio) a facturar la maleta. Ahí la maleta pesaba 26 kg, cuando el máximo era 25. La mujer la marcó como «Heavy» y no dijo nada más. No nos pidió dinero, así que asumimos que, aunque fuera «Heavy», entraba dentro de la tolerancia. Acto seguido, la mujer del mostrador nos preguntó:
 
@@ -56,4 +56,4 @@ Al llegar al aeropuerto, pasamos por inmigración sin ningún problema, cambiamo
 
 Al rato nos recogió Bachir, el taxista, y nos llevó hasta Gandiol. Allí Pablo y Rober nos estaban esperando. Nos dimos un fuerte abrazo tras casi un año sin vernos. Nos instalamos en las habitaciones y nos fuimos a dormir, ya que estábamos agotados.
 
-![taxi_bachir](images/taxi_bachir.jpg "El equipo en el taxi de Bachir de camino a Gandiol")
+![taxi_bachir](images/taxi_bachir.png "El equipo en el taxi de Bachir de camino a Gandiol")
