@@ -7,7 +7,7 @@ categories:
 tags: 
   - "ieee"
   - "cunc"
-  - "award"
+  - "premio"
 ---
 
 Estamos orgullosos de anunciar que nuestro equipo ha ganado el Premio Hahatay Network en el Reto IEEE CUNC. El Reto IEEE CUNC es una competición que reconoce soluciones de prueba de concepto y prototipos que abordan los desafíos de la futura internet en áreas desatendidas. Nuestra solución ha sido galardonada con el premio "Mención Honorífica" en la categoría de prueba de concepto.
