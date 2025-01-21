@@ -1,7 +1,8 @@
 ---
 title: "Hahatay Network Prize in IEEE CUNC Challenge 2024"
 date: 2024-11-28T14:45:00Z
-author: "Sergio Giménez"
+authors: 
+  - "sergio-gimenez"  
 categories: 
   - "news"
 tags: 

@@ -1,7 +1,8 @@
 ---
 title: "🏆 Prix du défi a IEEE CUNC 2024"
 date: 2024-11-28T14:45:00Z
-author: "Sergio Giménez"
+authors: 
+  - "sergio-gimenez"  
 categories: 
   - "nouvelles"
 tags: 

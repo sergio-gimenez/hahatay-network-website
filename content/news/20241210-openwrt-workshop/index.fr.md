@@ -1,7 +1,8 @@
 ---
 title: "Preparation de nouveaux noeuds wifi pour le réseau mesh"
 date: 2024-12-10
-author: "Sergio Giménez"
+authors: 
+  - "sergio-gimenez"  
 categories:
     - "nouvelles"
 tags:

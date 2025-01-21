@@ -9,10 +9,10 @@
     <div class="author mb-4">
         <h4 class="font-bold text-lg">{{ .Params.name | markdownify | emojify
             }}</h4>
-        <!-- {{ with .Params.bio }}
+        {{ with .Params.bio }}
         <p class="text-sm text-neutral-700 dark:text-neutral-400">{{ . |
             markdownify | emojify }}</p>
-        {{ end }} -->
+        {{ end }}
     </div>
     {{ end }}
     {{ end }}

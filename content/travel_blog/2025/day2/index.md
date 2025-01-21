@@ -1,15 +1,13 @@
 ---
-title: "Día 2: Networks, Teamwork and Sunsets in Gandiol"
+title: "Day 2: Networks, Teamwork and Sunsets in Gandiol"
 date: 2025-01-20
 categories: 
   - "travel blog"
 tags:
   - "2025"
 authors:
-  -  "sergio-gimenez"
+  -  "team-2025"
 ---
-
-## Morning Update
 
 This morning, we split into two groups to tackle different tasks related to the network and the project. One group (Roger and Sergio) headed to Tabax Nité, where our servers and routers are located. During the review, we ensured everything was running smoothly and discussed ways to improve the network’s resilience by implementing:
 
@@ -21,12 +19,19 @@ The other group went to investigate what was happening with Aminata’s network,
 
 Meanwhile, Jaume stayed with Joan and Aitor, teaching them how to set up mesh networks. They took the opportunity to update the process documentation and replaced a mesh node in Sunukeur, swapping out the old one at Pablo’s house.
 
----
+![thie_bou_diene](images/thie_bou_diene.jpg "Daba's Thie bou diene is particularly good")
 
-## Afternoon Update
+---
 
 In the afternoon, we all worked together in the courtyard. The wind shifted, and a pleasant breeze from the Atlantic created the perfect environment for outdoor work.
 
+![the_team](images/the_team.jpeg "The team working in the courtyard")
+
 Later, we took some time to relax and headed to Teranga bar, known for its stunning sunset views. The sunset was spectacular—possibly one of the most beautiful we’ve seen in Senegal. The colors shifted hypnotically for almost 30 minutes until all traces of light disappeared over the horizon.
+
+![sunset](images/sunset_teranga.jpg "Sunset in Gandiol I")
+
+![sunset2](images/sunset_teranga-ii.jpg "Sunset in Gandiol II")
+
 
 To end the day, we had *ñepe* (not sure about the spelling), a type of delicious bean dish that’s one of the best dinner options. Afterward, we enjoyed chatting with the guests staying at Hahatay before calling it a night.

@@ -1,12 +1,12 @@
 ---
-title: "Día 0: Día de viaje"
+title: "Day 0: Travel's Day"
 date: 2025-01-18
 categories: 
   - "travel blog"
 tags:
   - "2025"
 authors:
-  -  "sergio-gimenez"
+  -  "team-2025"
 ---
 
 The day of travel is always a day full of nerves. But good nerves. In the end, we've spent a lot of time working on this, so it's very normal to feel a bit anxious.

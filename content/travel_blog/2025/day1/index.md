@@ -1,12 +1,12 @@
 ---
-title: "Día 1: Definiendo objetivos"
-date: 2025-01-17
+title: "Day 1: Setting project goals"
+date: 2025-01-19
 categories: 
   - "travel blog"
 tags:
   - "2025"
 authors:
-  -  "sergio-gimenez"
+  -  "team-2025"
 ---
 
 Today has been a day full of reunions and first impressions at Hahatay. After arriving, we started the day with breakfast, which is undoubtedly the best time of the day here. We shared a pleasant morning with Laura, the children, and all the wonderful people who are part of Hahatay.

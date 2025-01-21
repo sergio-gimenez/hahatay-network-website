@@ -6,7 +6,7 @@ categories:
 tags:
   - "2025"
 authors:
-  -  "sergio-gimenez"
+  -  "team-2025"
   -  "test-author"
 ---
 

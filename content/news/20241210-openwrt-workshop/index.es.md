@@ -1,7 +1,8 @@
 ---
 title: "Preparando nuevos nodos wifi para la red mesh"
 date: 2024-12-10
-author: "Sergio Giménez"
+authors: 
+  - "sergio-gimenez"  
 categories:
     - "noticias"
 tags:

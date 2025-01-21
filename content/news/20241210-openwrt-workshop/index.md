@@ -1,7 +1,8 @@
 ---
 title: "Setting up new wifi nodes for the mesh network"
 date: 2024-12-10
-author: "Sergio Giménez"
+authors: 
+  - "sergio-gimenez"  
 categories:
     - "news"
 tags:
