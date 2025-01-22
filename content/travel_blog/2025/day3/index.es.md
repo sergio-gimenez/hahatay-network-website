@@ -2,7 +2,7 @@
 title: "Día 3: Diagnosticando y resolviendo problemas en la red"
 date: 2025-01-21
 categories: 
-  - "travel blog"
+  - "blog de viaje"
 tags:
   - "2025"
 authors:
