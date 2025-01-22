@@ -1,6 +1,6 @@
 ---
-title: "Day 2: Diagnosing and Solving Network Issues"
-date: 2025-01-20
+title: "Day 3: Diagnosing and Solving Network Issues"
+date: 2025-01-21
 categories: 
   - "travel blog"
 tags:
