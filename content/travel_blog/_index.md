@@ -5,6 +5,6 @@ showDate: false
 layout: "list"
 ---
 
-This section contains blogs written during every trip to Senegal. We started this initiative in 2025 mainly because we are just so bad at taking pictures and documenting our work.
+This section contains blogs written during our trips to Senegal. We started this initiative in 2025, mainly because we’re terrible at taking photos and sharing our work, especially non-technical dissemination.
 
-Developing a project is not just working on it, it's also important to disseminate.
+Developing a project isn’t just about working on the technical aspects; it’s also about properly sharing and communicating its progress. Moreover, this project has a strong social and human component that deserves, at the very least, an attempt to convey it in some way. This corner of the website is our effort to do so. We hope you enjoy it.
