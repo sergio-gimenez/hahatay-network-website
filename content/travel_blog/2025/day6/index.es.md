@@ -1,6 +1,6 @@
 ---
 title: "Día 6: Una Jornada Productiva y Celebración en la Playa de Lakhrar"  
-date: 2025-01-26 
+date: 2025-01-24 
 categories:  
   - "blog de viaje"  
 tags:  
