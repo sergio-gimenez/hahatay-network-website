@@ -1,6 +1,6 @@
 ---
-title: "Día 7: "  
-date: 2025-01-26T23:00:00+00:00
+title: "Día 7: Sábado de Relax"  
+date: 2025-01-25
 categories:  
   - "blog de viaje"  
 tags:  
@@ -39,7 +39,7 @@ Por la tarde, Jaume, Joan y Aitor se embarcaron en una escapada a Saint Louis. S
 La visita al mercado local fue una experiencia impactante. Nos encontramos con un entorno vibrante y caótico donde todo tipo de alimentos estaba expuesto de manera sorprendente. Entre colores, olores y voces, nos sumergimos en la cotidianidad de Saint Louis y quedamos alucinados con este bonito mercado.
 
 ![Mercado](images/mercado_st_louis.jpg "Mercado")
-![Mercado: Pescaderia](images/mercado_st_louisII.jpg "Mercado Pescaderia")
+![Mercado: Pescaderia](images/mercado_st_louis_II.jpg "Mercado Pescaderia")
 
 
 ### El bazar: bueno, bonito y barato

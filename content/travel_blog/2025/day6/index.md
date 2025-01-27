@@ -1,6 +1,6 @@
 ---
 title: "Day 6: A Productive Day and Celebration at Lakhrar Beach"  
-date: 2025-01-26
+date: 2025-01-24
 categories:  
   - "travel blog"  
 tags:  
