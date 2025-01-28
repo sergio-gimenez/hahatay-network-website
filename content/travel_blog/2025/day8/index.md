@@ -23,7 +23,7 @@ Aitor and Sergio worked on updating the Sunukeur network by replacing the master
 
 At lunchtime, we headed to Zebrabar, where we met up with some of Lorenzo and Pablo's friends, making a total of 24 people. The fish dish of the day was particularly popular.
 
-![Plat du Jour](images/plat_du_jour "Plat du Jour")
+![Plat du Jour](images/plat_du_jour.jpg "Plat du Jour")
 
 After lunch, we spent some time at the place, once again enjoying the views and the peaceful atmosphere.
 

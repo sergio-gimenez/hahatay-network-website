@@ -28,7 +28,7 @@ A la hora de comer, nos dirigimos al Zebrabar, donde nos encontramos con unos am
 Después de comer, pasamos un buen rato en el lugar, disfrutamos de nuevo de las vistas y de la tranquilidad del lugar.
 
 ![vistas Zebra](images/vistas_zebrabar.jpg "Preciosas vistas des del Zebrabar")
-![descanso Zebra](images/descanso.jpg "El equuipo descansando")
+![descanso Zebra](images/descanso.jpg "El equuipo descansandopp")
 
 ### Regreso a Sunukeur: Cena y Fútbol
 
