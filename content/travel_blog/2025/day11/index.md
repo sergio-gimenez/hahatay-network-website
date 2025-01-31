@@ -1,55 +1,42 @@
 ---
-title: "Day 10: Volunteering in Sunukeur"
-date: 2025-01-28
-categories:  
-  - "travel blog"  
-tags:  
-  - "2025"  
-authors:  
-  - "team-2025"  
+title: "Day 11: Technical Advances and New Stories in Saint Louis"
+date: 2025-01-29
+categories:
+  - "travel blog"
+tags:
+  - "2025"
+authors:
+  - "team-2025"
 ---
 
-## Day 10 - Volunteering
+Today, Wednesday, started with a shared breakfast under the typical heat of Senegal, but the team kept their spirits high and motivation strong to continue with the technical progress of the project.
 
-The day began with the usual routine: a good breakfast to recharge before getting to work. But today, there was a little surprise on the table: Laura had prepared homemade hummus, a small change that made a difference and lifted everyone's spirits.
+## Network Advances and Firewall Optimization
 
-### Work in Fess
+Joan and Jaume took a short break from their work with Zabbix to focus on improving the network configuration. They worked on centralizing the firewall rules of the routers with internet access so that, in some centers in Hahatay, there would be no internet during non-working hours, and in the residence, from 11:00 PM to 8:00 AM. This implementation had already been done on the master of each mesh, but it had one issue: by blocking the internet access, we couldn’t access routers from other areas when we needed to make configurations. Now, with this new solution, we can access the routers without issue, as we only block internet access.  
+![Joan and Jaume working](images/jaume_joan_trabaj.jpg "Joan and Jaume working")
 
-Aitor and Roger set off early to work in Fess. The 20-minute walk there was pleasant, with perfect weather and a light breeze that made the journey much easier.
+## The Challenge of Xiaomi Routers
 
-![Arriving at Fess](images/llegando_a_fess.jpg "Arriving at Fess")
+Meanwhile, Roger and Aitor decided to stay in Sunukeur, as yesterday’s return had left them exhausted. They ran into some issues while trying to configure Xiaomi routers, which weren’t properly receiving commands from OpenWISP. It turns out Xiaomi released two versions of these routers with subtle hardware differences, which cause compatibility issues with the firmware required for OpenWISP installation. The installation and update process continued to be challenging, but it was a good opportunity to prepare replacement routers or replace those that had not yet been reviewed.  
+![Fighting with different routers](images/routers.JPG "Fighting with different routers")
 
-Once in Fess, they continued refining the OpenWISP templates to ensure the router configurations left no loose ends. They also worked on reconfiguring some static IPs that had been lost the previous day. Although the results weren’t too promising, at least they reached conclusions that will help improve OpenWISP implementation in the coming days. 
+## New Ideas and Challenges with Zabbix
 
-The way back, however, was a different story: the warm wind from the Sahara turned the walk into a real ordeal. Without the morning breeze, the heat became almost unbearable.
+After lunch, Joan and Jaume returned to work with Zabbix. While they didn’t make significant progress today, they discussed some ideas and started implementing new strategies to optimize network monitoring in the coming days.
 
-![Aitor and Roger working on OpenWISP](images/aitor_roger_openwisp.jpg "Aitor and Roger working on OpenWISP")
+## Solving the Radio Shutdown Issue
 
-### Recovery of Defaratt
+In the afternoon, Roger and Aitor worked on a problem that had arisen with several new routers: the radios were turned off. This prevented the routers from broadcasting wifi and communicating with the mesh network. After several attempts, they found some lines of code in the OpenWISP documentation that seemed to address the problem, but when implemented, they disabled other necessary interfaces. After much trial and error, they managed to solve the problem, and now the templates to configure slave and master routers are ready.
 
-Meanwhile, Jaume and Joan planned to recover **Defaratt**, a Hahatay center dedicated to plastic recycling. In theory, the site already had an antenna and a master router, so the first step was to check the old *Zabbix* system to see if they were still operational. Fortunately, everything was up and running, so we avoided the trip and stayed in *Sunukeur* to work on the configurations.
+## Football Afternoon and a Memorable Dinner
 
-However, the router in question was a **Linksys**, the same model that had given us trouble before, and we couldn’t download the necessary packages. After several unsuccessful attempts, we decided to focus on a new implementation in *Zabbix* to detect devices that restart multiple times in a single day, which usually indicates an issue with the wiring or the power connection. To our surprise, we found more problems than expected, so this task will continue in the coming days.
+At 6:30 PM, Aitor, Jaume, Joan, and Roger took a taxi to Saint Louis to watch the many Champions League matches playing that afternoon. They went to a very unique spot called *Le Montagne*. There, they had a large screen showing different matches, 20 minutes of each, as they were all playing at the same time.  
+![Football at Le Montagne](images/futbol.jpg "Football at Le Montagne")
 
-### Rest and Planning
+Later, Javier, one of Lorenzo and Pablo’s friends who is staying in Hahatay these days, joined them. It turned out that Javier works on various cooperation projects and has traveled across much of Africa and many other countries. We spent a good part of the night listening to his experiences—things he had seen, lived, and that had shaped his way of thinking and believing, all shared with humility and a smile.  
+![Dinner with Javier](images/cena.JPG "Dinner with Javier")
 
-For lunch, we had a typical dish: **theibuiene rouge**.
-
-After eating, the heat was too intense to keep working, so everyone retreated to their rooms for a break. Some took a nap, and around 4:00 PM, we resumed work, using anything we could find to fan ourselves.
-
-![Working in the heat](images/trabajando_al_calor.jpg "Working in the heat")
-
-At 5:00 PM, when Sergio finished his workday, we all gathered to organize tasks, mark the ones we had completed, update the issues that had arisen, and plan the next day's work. We kept working until 6:00 PM and, after a long and hot day, decided it was time for a break at *Teranga*. We arrived still overheated, but there we could cool down with some cold drinks and relax for a while.
-
-![Resting at Teranga](images/descanso_en_el_teranga.jpg "Resting at Teranga")
-![Snacks served with drinks at Teranga](images/pica_pica.jpg "Snacks served with drinks at Teranga")
-
-### End of the Day
-
-Dinner was the perfect way to close the day. Plus, we met **Amina**, an artist who came to spend a few days in *Sunukeur* to share, get inspired, and learn from other artists—one of the many interesting initiatives offered by *Hahatay*.
-
-The conversation flowed with laughter and jokes until someone mentioned the movie *Torrente*. The joke turned into a challenge, and we started searching for it to watch. It wasn’t easy, but in the end, we managed to find a clip and ended the day laughing.
-
-![Watching Torrente at night](images/torrente.jpg "Watching Torrente at night")
-
-Another day of learning, work, and shared moments. Tomorrow, another intense day awaits, but for now, it's time to rest.
+The night ended with a spectacular dinner: three grilled *poissons*, which were undoubtedly the highlight of the day. To wrap it up, we saw many locals buying a white brew in bulk at the restaurant, and Jaume couldn’t resist buying a bottle. It honestly didn’t smell or taste very good, but we all tried it, and thankfully no one had any stomach issues the next day.  
+![The Fish](images/pescado.jpg "The Fish")  
+![The White Brew](images/brebaje.jpg "The White Brew")
