@@ -1,5 +1,5 @@
 ---
-title: "Día 10: Voluntariado en Sunukeur"
+title: "Día 10: Recuperando Defaratt, avances con OpenWisp, Calor y Atardeceres."
 date: 2025-01-28
 categories:  
   - "blog de viaje"  
@@ -9,11 +9,9 @@ authors:
   - "team-2025"  
 ---
 
-## Día 10 - Voluntariado
-
 El día comenzó con la misma rutina de siempre: un buen desayuno para cargar energías antes de ponernos en marcha. Pero hoy había una pequeña sorpresa en la mesa: Laura había preparado hummus casero, un pequeño cambio que hizo la diferencia y nos dejó a todos con el ánimo arriba.
 
-### Trabajo en Fess
+## Trabajo en Fess
 
 Aitor y Roger se pusieron en marcha temprano para trabajar en Fess. El paseo de 20 minutos hasta allí fue agradable, con una temperatura perfecta y una brisa ligera que hacía el camino mucho más llevadero. 
 
@@ -23,13 +21,13 @@ Una vez en Fess, siguieron afinando los templates de OpenWISP para asegurarse de
 
 ![Aitor y Roger trabajando en OpenWISP](images/aitor_roger_openwisp.jpg "Aitor y Roger trabajando en OpenWISP")
 
-### Recuperación de Defaratt
+## Recuperación de Defaratt
 
 Por su parte, Jaume y Joan tenían previsto recuperar **Defaratt**, un centro de Hahatay dedicado al reciclaje de plástico. En teoría, el sitio ya contaba con una antena y un router master, así que lo primero fue revisar el antiguo *Zabbix* para ver si seguían en funcionamiento. Para nuestra suerte, todo estaba operativo, así que nos ahorramos el desplazamiento y nos quedamos en *Sunukeur* trabajando en las configuraciones. 
 
 Sin embargo, el router en cuestión era un **Linksys**, el mismo modelo que ya nos había dado problemas en otras ocasiones, y no conseguimos descargar los paquetes necesarios. Tras varias pruebas infructuosas, decidimos centrarnos en una nueva implementación en *Zabbix* para detectar dispositivos que se reinician repetidamente en un mismo día, lo que suele indicar un problema en el cableado o en el contacto eléctrico. Para nuestra sorpresa, encontramos más problemas de los que habíamos imaginado, así que este tema seguirá en proceso los próximos días.
 
-### Descanso y planificación
+## Descanso y planificación
 
 Para el almuerzo, nos esperaba un plato típico: **theibuiene rouge**. 
 
@@ -44,7 +42,7 @@ A las 17:00, cuando Sergio terminó su jornada laboral, nos reunimos todos para 
 ![Pica-Pica que nos sirven con la bebida en el Teranga](images/pica_pica.jpg "Pica-Pica que nos sirven con la bebida en el Teranga")
 
 
-### Cierre del día
+## Cierre del día
 
 La cena fue el cierre perfecto del día. Además, conocimos a **Amina**, una artista que ha venido a pasar unos días en *Sunukeur* con el objetivo de compartir, inspirarse y aprender de otros artistas, una de las tantas iniciativas interesantes que ofrece *Hahatay*.
 

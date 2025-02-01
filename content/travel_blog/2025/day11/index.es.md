@@ -11,6 +11,12 @@ authors:
 
 Hoy, miércoles, comenzó con un desayuno compartido bajo el calor típico de Senegal, pero el equipo mantuvo el buen ánimo y la motivación para seguir con los avances técnicos del proyecto.
 
+## Planes Futuros
+
+Sergio se juntó por la mañana con Lorenzo para tener una reunión con el [FDSUT](https://fdsut.sn/), explicarles el proyecto que llevamos juntos haciendo y abrir posibles vías para una colaboración futura. La reunión fue muy positiva y se abrieron muchas posibilidades para futuros proyectos en la región.
+
+![sergio y loren en la reunión](images/sergio-loren-fdsut.png "Sergio y Lorenzo en Ndar Weesul en los momentos previos reunión")
+
 ## Avances en la red y optimización del firewall  
 
 Joan y Jaume hicieron una pequeña pausa en su trabajo con Zabbix para centrarse en mejorar la configuración de la red. Se dedicaron a centralizar las reglas del firewall de los routers con salida a internet para que, en algunos centros de Hahatay, no haya conexión durante las horas no laborables, y en la residencia, de 23:00 a 8:00. Esta implementación ya se había hecho en el master de cada mesh, pero presentaba un inconveniente: al bloquearse la salida a internet, no podíamos acceder a los routers de otras zonas cuando necesitábamos hacer configuraciones. Ahora, con esta nueva solución, podemos acceder a los routers sin problema ya que solo bloqueamos la salida a internet.  
@@ -29,6 +35,12 @@ Después de comer, Joan y Jaume volvieron al trabajo con Zabbix. Aunque hoy no l
 ## Resolviendo el problema de las radios apagadas  
 
 Por la tarde, Roger y Aitor se dedicaron a un problema que había surgido en varios routers nuevos: las radios estaban apagadas. Esto impedía que los routers pudieran radiar wifi y comunicarse con la red mesh. Después de varios intentos, encontraron unas líneas de código en la documentación de OpenWISP que aparentemente podían solucionar el problema, pero al implementarlas, desactivaban otras interfaces necesarias. Tras mucho ensayo y error, lograron resolver el problema y ahora las plantillas para configurar routers slave y master están listas.  
+
+## Nuevo Servidor en JangKom
+
+Sergio y Lorenzo, después de su jornada de trabajo en Ndar weesul, se fueron a Jangkom para poder instalar un nuevo servidor que permitirá monitorizar y gestionar las redes de JangKom y Wesul utilizando Zabbix y OpenWisp. La instalación fue un tanto ortodoxa, pero finalmente quedó todo estable.
+
+![Lorenzo colocando el nuevo servidor en el despacho de Jangkom](images/lorenzo-colocando-server-jangkom.jpg "Lorenzo colocando el nuevo servidor en JangKom")
 
 ## Tarde de fútbol y una cena memorable  
 

@@ -1,5 +1,5 @@
 ---
-title: "Day 10: Volunteering in Sunukeur"
+title: "Day 10: Recovering Defaratt, Progress with OpenWisp, Heat and Sunsets"
 date: 2025-01-28
 categories:  
   - "travel blog"  
@@ -9,11 +9,9 @@ authors:
   - "team-2025"  
 ---
 
-## Day 10 - Volunteering
-
 The day began with the usual routine: a good breakfast to recharge before getting to work. But today, there was a little surprise on the table: Laura had prepared homemade hummus, a small change that made a difference and lifted everyone's spirits.
 
-### Work in Fess
+## Work in Fess
 
 Aitor and Roger set off early to work in Fess. The 20-minute walk there was pleasant, with perfect weather and a light breeze that made the journey much easier.
 
@@ -25,13 +23,13 @@ The way back, however, was a different story: the warm wind from the Sahara turn
 
 ![Aitor and Roger working on OpenWISP](images/aitor_roger_openwisp.jpg "Aitor and Roger working on OpenWISP")
 
-### Recovery of Defaratt
+## Recovery of Defaratt
 
 Meanwhile, Jaume and Joan planned to recover **Defaratt**, a Hahatay center dedicated to plastic recycling. In theory, the site already had an antenna and a master router, so the first step was to check the old *Zabbix* system to see if they were still operational. Fortunately, everything was up and running, so we avoided the trip and stayed in *Sunukeur* to work on the configurations.
 
 However, the router in question was a **Linksys**, the same model that had given us trouble before, and we couldn’t download the necessary packages. After several unsuccessful attempts, we decided to focus on a new implementation in *Zabbix* to detect devices that restart multiple times in a single day, which usually indicates an issue with the wiring or the power connection. To our surprise, we found more problems than expected, so this task will continue in the coming days.
 
-### Rest and Planning
+## Rest and Planning
 
 For lunch, we had a typical dish: **theibuiene rouge**.
 
@@ -44,7 +42,7 @@ At 5:00 PM, when Sergio finished his workday, we all gathered to organize tasks,
 ![Resting at Teranga](images/descanso_en_el_teranga.jpg "Resting at Teranga")
 ![Snacks served with drinks at Teranga](images/pica_pica.jpg "Snacks served with drinks at Teranga")
 
-### End of the Day
+## End of the Day
 
 Dinner was the perfect way to close the day. Plus, we met **Amina**, an artist who came to spend a few days in *Sunukeur* to share, get inspired, and learn from other artists—one of the many interesting initiatives offered by *Hahatay*.
 
