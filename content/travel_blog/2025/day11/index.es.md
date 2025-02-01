@@ -11,7 +11,7 @@ authors:
 
 Hoy, miércoles, comenzó con un desayuno compartido bajo el calor típico de Senegal, pero el equipo mantuvo el buen ánimo y la motivación para seguir con los avances técnicos del proyecto.
 
-## Planes Futuros
+## Planes Futuros con FDSUT
 
 Sergio se juntó por la mañana con Lorenzo para tener una reunión con el [FDSUT](https://fdsut.sn/), explicarles el proyecto que llevamos juntos haciendo y abrir posibles vías para una colaboración futura. La reunión fue muy positiva y se abrieron muchas posibilidades para futuros proyectos en la región.
 
