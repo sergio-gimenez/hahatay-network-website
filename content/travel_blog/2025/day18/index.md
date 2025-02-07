@@ -27,17 +27,17 @@ Joan and Pablo worked on configuring new antennas to improve the Sunukeur-Aminat
 
 After that, Joan added all the routers from the previous day to Zabbix and assigned them fixed IPs.  
 
-![Network tests on Zabbix](foto_prueba.jpg "Testing the network on Zabbix")  
+![Network tests on Zabbix](images/foto_prueba.jpg "Testing the network on Zabbix")  
 
 ### Jaume & Roger: Fixing Weesul & JangKom Networks  
 
 Jaume and Roger returned to Weesul to fix the issues from the day before. Initially, they tried to recreate the network using OpenWISP hosted in JangKom, but the VPN wasn’t working. In the end, they **rebuilt the entire mesh network from scratch**, adding a couple of extra nodes to improve coverage. The effort paid off, and everything was running smoothly.  
 
-![Jaume setting up a router](foto_jaume_router.jpg "Jaume configuring a router at Weesul")  
+![Jaume setting up a router](images/foto_jaume_router.jpg "Jaume configuring a router at Weesul")  
 
 At lunchtime, they went to a bar with a terrace overlooking the **Senegal River and Saint-Louis**, where they enjoyed a delicious **spicy chicken and cheese taco**.  
 
-![Roger walking in Saint-Louis](foto_roger_caminant.jpg "Roger walking through Saint-Louis")  
+![Roger walking in Saint-Louis](images/foto_roger_caminant.jpg "Roger walking through Saint-Louis")  
 
 After that, they headed to JangKom to add all the routers to OpenWISP and configure them using its templates. While working, they were offered a **hot yogurt with noodles and lots of sugar**, which turned out to be surprisingly good. Maybe that energy boost helped them finish their work quickly and efficiently.  
 
@@ -45,9 +45,9 @@ As a farewell from the center, they were also offered **Attaya**, this time with
 
 To get back to the taxi stop, they took **bus number 8**, a very curious and cheap local bus—the ride only cost **100 CFAS**. Interestingly, the bus cashier was locked inside a small cage.  
 
-![OpenWISP configuration](foto-openwisp.png "Configuring OpenWISP")  
-![Zabbix configuration](foto-zabbix.jpg "Configuring Zabbix") 
-![Local bus in Saint-Louis](foto_bus.jpg "The curious number 8 bus")  
+![OpenWISP configuration](images/foto-openwisp.png "Configuring OpenWISP")  
+![Zabbix configuration](images/foto-zabbix.jpg "Configuring Zabbix") 
+![Local bus in Saint-Louis](images/foto_bus.jpg "The curious number 8 bus")  
 
 ### Afternoon: Football Match in Sunukeur  
 
@@ -63,13 +63,13 @@ Meanwhile, Joan and Pablo tested the **compatibility between new and old antenna
 
 When Roger arrived from Saint-Louis and saw them on the roof, he immediately **climbed up to help**.  
 
-![Working on the rooftop](foto_tejado.jpg "Joan, Pablo, and Roger on Mamadou’s rooftop")  
+![Working on the rooftop](images/foto_tejado.jpg "Joan, Pablo, and Roger on Mamadou’s rooftop")  
 
 ### Sunset at Zebra Bar & Special Dinner  
 
 To end the day, we decided to go to **Zebra Bar** to watch the sunset. When we returned, a delicious **Ndiebe** was waiting for us—one of the team's favorite meals!  
 
-![Sunset at Zebra Bar](foto_puesta_sol.jpg "Sunset at Zebra Bar")  
-![Ndiebe dinner](foto_ndiebe.jpg "Ndiebe dinner, a team favorite")  
+![Sunset at Zebra Bar](images/foto_puesta_sol.jpg "Sunset at Zebra Bar")  
+![Ndiebe dinner](images/foto_ndiebe.jpg "Ndiebe dinner, a team favorite")  
 
 It was a day of great progress and unforgettable experiences. **More adventures await tomorrow!**  

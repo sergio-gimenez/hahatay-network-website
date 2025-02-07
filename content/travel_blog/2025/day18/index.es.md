@@ -25,25 +25,25 @@ Joan y Pablo trabajaron en la configuración de unas antenas nuevas para mejorar
 
 Después, Joan se encargó de añadir a Zabbix todos los routers configurados el día anterior y fijar sus IPs.  
 
-![Pruebas de red en Zabbix](foto_prueba.jpg "Pruebas de red en Zabbix")  
+![Pruebas de red en Zabbix](images/foto_prueba.jpg "Pruebas de red en Zabbix")  
 
 ### Jaume y Roger: Mejoras en la Red de Weesul y JangKom  
 
 Jaume y Roger volvieron a Weesul para solucionar los problemas del día anterior. Inicialmente, intentaron recrear la red con el OpenWISP alojado en JangKom, pero la VPN no funcionaba. Finalmente, decidieron rehacer toda la red mesh desde cero, añadiendo un par de nodos extra para mejorar la cobertura. El esfuerzo valió la pena y todo quedó perfectamente configurado.  
 
-![Jaume configurando un router](foto_jaume_router.jpg "Jaume configurando un router en Weesul")  
+![Jaume configurando un router](images/foto_jaume_router.jpg "Jaume configurando un router en Weesul")  
 
 A la hora de comer, se fueron a un bar con terraza y vistas al río Senegal y Saint-Louis, donde disfrutaron de un buen taco de pollo con queso y picante.  
 
-![Roger caminando por Saint-Louis](foto_roger_caminant.jpg "Roger paseando por Saint-Louis")  
+![Roger caminando por Saint-Louis](images/foto_roger_caminant.jpg "Roger paseando por Saint-Louis")  
 
 Después, se dirigieron a JangKom para añadir todos los routers a OpenWISP y configurarlos con los templates. Mientras trabajaban, les ofrecieron una bebida local: un yogur caliente con fideos y mucho azúcar, que resultó estar delicioso. Quizás gracias a ese impulso de energía lograron terminar el trabajo rápida y eficientemente.  
 
 Para despedirse del centro, también les ofrecieron Attaya, esta vez con un toque de menta. Al regresar, tomaron el autobús número 8, un bus local muy curioso y barato (el trayecto costó solo 100 CFAS). Lo más llamativo fue que el cobrador del bus iba dentro de una especie de celda.  
 
-![Configuración en OpenWISP ](foto-openwisp.png "Configuración en OpenWISP")  
-![Configuración en Zabbix](foto-zabbix.jpg "Configuración en Zabbix")  
-![Autobús local en Saint-Louis](foto_bus.jpg "El curioso bus número 8")  
+![Configuración en OpenWISP ](images/foto-openwisp.png "Configuración en OpenWISP")  
+![Configuración en Zabbix](foto-images/zabbix.jpg "Configuración en Zabbix")  
+![Autobús local en Saint-Louis](images/foto_bus.jpg "El curioso bus número 8")  
 
 ### Tarde: Partido en Sunukeur  
 
@@ -59,13 +59,13 @@ Mientras tanto, Joan y Pablo probaron la compatibilidad entre las nuevas antenas
 
 Roger, al llegar de Saint-Louis y verlos en el tejado, no dudó en subir a ayudar.  
 
-![Trabajando en el tejado](foto_tejado.jpg "Joan, Pablo y Roger en el tejado de Mamadou")  
+![Trabajando en el tejado](images/foto_tejado.jpg "Joan, Pablo y Roger en el tejado de Mamadou")  
 
 ### Atardecer en Zebra Bar y Cena Especial  
 
 Para cerrar el día, decidimos ir al Zebra Bar a ver la puesta de sol. Al regresar, nos esperaba un delicioso Ndiebe, uno de los platos favoritos del equipo.  
 
-![Puesta de sol en Zebra Bar](foto_puesta_sol.jpg "Atardecer en Zebra Bar")  
-![Cena de Ndiebe](foto_ndiebe.jpg "Cena de Ndiebe, un clásico del equipo")  
+![Puesta de sol en Zebra Bar](images/foto_puesta_sol.jpg "Atardecer en Zebra Bar")  
+![Cena de Ndiebe](images/foto_ndiebe.jpg "Cena de Ndiebe, un clásico del equipo")  
 
 Fue un día de grandes avances y experiencias inolvidables. ¡Mañana más!  
