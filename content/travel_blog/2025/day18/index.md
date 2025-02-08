@@ -63,7 +63,7 @@ Meanwhile, Joan and Pablo tested the **compatibility between new and old antenna
 
 When Roger arrived from Saint-Louis and saw them on the roof, he immediately **climbed up to help**.  
 
-![Working on the rooftop](images/foto_tejado.jpg "Joan, Pablo, and Roger on Mamadou’s rooftop")  
+![Working on the rooftop](images/foto_tejado_t.jpg "Joan, Pablo, and Roger on Mamadou’s rooftop")  
 
 ### Sunset at Zebra Bar & Special Dinner  
 

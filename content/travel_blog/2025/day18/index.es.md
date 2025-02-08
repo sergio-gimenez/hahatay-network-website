@@ -25,7 +25,7 @@ Joan y Pablo trabajaron en la configuración de unas antenas nuevas para mejorar
 
 Después, Joan se encargó de añadir a Zabbix todos los routers configurados el día anterior y fijar sus IPs.  
 
-![Pruebas de red en Zabbix](images/foto_prueba.jpg "Pruebas de red en Zabbix")  
+![Pruebas de red en Zabbix](images/foto-zabbix.jpg "Pruebas de red en Zabbix")  
 
 ### Jaume y Roger: Mejoras en la Red de Weesul y JangKom  
 
@@ -42,8 +42,7 @@ Después, se dirigieron a JangKom para añadir todos los routers a OpenWISP y co
 Para despedirse del centro, también les ofrecieron Attaya, esta vez con un toque de menta. Al regresar, tomaron el autobús número 8, un bus local muy curioso y barato (el trayecto costó solo 100 CFAS). Lo más llamativo fue que el cobrador del bus iba dentro de una especie de celda.  
 
 ![Configuración en OpenWISP ](images/foto-openwisp.png "Configuración en OpenWISP")  
-![Configuración en Zabbix](foto-images/zabbix.jpg "Configuración en Zabbix")  
-![Autobús local en Saint-Louis](images/foto_bus.jpg "El curioso bus número 8")  
+![Autobús local en Saint-Louis](images/foto_bus.jpg "El curioso bus número 8 y su revisor")  
 
 ### Tarde: Partido en Sunukeur  
 

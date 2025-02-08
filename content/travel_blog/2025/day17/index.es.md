@@ -30,6 +30,7 @@ Mientras Jaume y Joan trabajaban en Saint-Louis, Aitor y Roger pasaron la mañan
 Mientras tanto, Pablo estuvo soldando una estructura para una escalera que se instalaría en Tabax Nite, y Lorenzo trabajó con una sierra radial.  
 
 ![Pablo soldando](images/pablo.JPG "Pablo trabajando en la estructura de la escalera")  
+
 ![Lorenzo trabajando](images/loren.JPG "Lorenzo usando la sierra radial")  
 
 Hacia el final de la mañana, Aitor y Roger comenzaron a configurar y subir a OpenWISP varios routers de respaldo. Esto permitirá reemplazar rápidamente cualquier router que falle, asegurando una transición fluida gracias a las plantillas de OpenWISP.  
