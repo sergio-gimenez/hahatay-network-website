@@ -16,8 +16,8 @@
   weight = 10
 
 [[main]]
-  name = "📰 News"
-  pageRef = "news"
+  name = "📰 News & Articles"
+  pageRef = "news_articles"
   weight = 20
 
 [[main]]
