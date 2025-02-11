@@ -1,6 +1,6 @@
 ---
 title: "Day 20: Relax, Guen'dar and a new Rack"  
-date: 2025-02-05  
+date: 2025-02-07
 categories:  
   - "travel blog"  
 tags:  

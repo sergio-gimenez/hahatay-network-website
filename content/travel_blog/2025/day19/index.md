@@ -1,6 +1,6 @@
 ---
 title: "Day 19: Inauguration of the Computer Room, *Guañi Guañi*, and Last Dinner at La Source"  
-date: 2025-02-05  
+date: 2025-02-06
 categories:  
   - "travel blog"  
 tags:  
