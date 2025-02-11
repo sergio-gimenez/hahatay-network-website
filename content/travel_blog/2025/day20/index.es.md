@@ -4,7 +4,7 @@ date: 2025-02-07
 categories:  
   - "blog de viaje"  
 tags:  
-  - "2025"  
+  - "2025"
 authors:  
   - "team-2025"  
 ---

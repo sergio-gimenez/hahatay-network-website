@@ -1,5 +1,5 @@
 ---
-title: "Day 18: Final OpenWISP Tests, Antenna Configuration, and Football Match in Sunukeur"  
+title: "Day 21: Ba benen Yoon"  
 date: 2025-02-08  
 categories:  
   - "travel blog"  
