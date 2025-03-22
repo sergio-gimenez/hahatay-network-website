@@ -5,7 +5,7 @@ categories:
   - "travel blog"
 tags:
   - "2025"
-authors:
-  -  "team-2025"
+sort_by: "date"
+sort_order: "asc"
 ---
 

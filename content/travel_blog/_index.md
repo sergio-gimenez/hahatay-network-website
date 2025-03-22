@@ -3,6 +3,8 @@ title: "🇸🇳 Travel Blog"
 showTableOfContents: false
 showDate: false
 layout: "list"
+sort_by: "date"
+sort_order: "asc"
 ---
 
 This section contains blogs written during our trips to Senegal. We started this initiative in 2025, mainly because we’re terrible at taking photos and sharing our work, especially non-technical dissemination.
