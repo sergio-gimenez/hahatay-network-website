@@ -12,8 +12,6 @@ tags:
     - "Tabax Nite"
 ---
 
-# Hahatay Inaugurates New Labdoo Classroom
-
 We are thrilled to announce the completion and inauguration of a new classroom in Tabax Nite, which is a project located within Hahatay. This project, which we have been diligently working on, is now ready to serve the community of Gandiol!
 
 {{< two-figures-single-caption "images/aucoop-team.jpeg" "images/laptops.jpeg" >}}
