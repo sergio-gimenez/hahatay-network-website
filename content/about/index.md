@@ -14,12 +14,30 @@ Hahatay is a Senegalese association dedicated to fostering the creation of small
 
 * Hahatay advocates for the fundamental right to migrate and works closely with women entrepreneurs to enhance their initiatives, promote their visibility, and uphold their rights in the community.
 
+{{< two-figures-single-caption "images/todos_hahatay.jpg" "images/harmonigramme.png" >}}
+
+{{< /two-figures-single-caption >}}
+
+
 ## 🎯 The Goal
 
 The main goal of this community network is to provide Gandiol with affordable, stable internet connectivity. This includes:
 
-* Linking various spaces within the Hahatay community
+  * Linking various spaces within the Hahatay community using radio links and WiFi mesh networks. 
+
+  {{< two-figures-single-caption "images/radio_link_interconnection.png" "images/gandiol_and_saint_louis.png" >}}
+
+  At the left, the radio link interconnection between the spaces in Gandiol. At the right, the map of Gandiol and Saint Louis, showing the locations of the different spaces connected by the network.
+
+  {{< /two-figures-single-caption >}}
+
   * Offering self-hosted services to support the association's daily activities.
+
+  {{< two-figures-single-caption "images/classroom_empty.png" "images/classroom.png" >}}
+  At the left, an empty classroom at Hahatay, ready to be used. At the right, a classroom at Hahatay, where students use laptops provided by Labdoo.
+  {{< /two-figures-single-caption >}}
+
+
 
 The network is built using cost-effective methods and open-source software, featuring mesh networks for WiFi coverage and point-to-point radio links for long distances.
 
