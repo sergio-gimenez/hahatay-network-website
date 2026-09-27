@@ -1,0 +1,13 @@
+{{/* Overrides Congo's analytics partial to load Plausible's per-site script. */}}
+{{ if hugo.IsProduction }}
+  {{ with site.Params.plausibleAnalytics.script }}
+    <script async src="{{ . }}"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+    {{ if eq $.Kind "404" }}
+      <script>plausible("404",{props:{path:document.location.pathname}})</script>
+    {{ end }}
+  {{ end }}
+{{ end }}
