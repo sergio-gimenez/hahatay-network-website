@@ -1,0 +1,8 @@
+{{/* Congo includes this at the end of the footer. The weight line makes the low-bandwidth promise
+  visible: assets/js/weight.js fills in what this visit actually downloaded. */}}
+<p class="hh-weight">
+  {{ i18n "footer.light" }}
+  <span id="hh-weight" data-template="{{ i18n "footer.weight" }}" hidden></span>
+</p>
+{{- $js := resources.Get "js/weight.js" | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha256") }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

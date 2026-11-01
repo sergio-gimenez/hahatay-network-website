@@ -1,0 +1,39 @@
+# The network map on the home page (layouts/partials/home/map.html).
+# lat/lon in Gandiol were placed by lining up content/about/images/radio_link_interconnection.png
+# with OpenStreetMap (good to a few tens of metres); replace them with exact coordinates when known.
+# A node with an empty name is drawn without a label: fill it in once we know which site it is.
+# frame: which map the node is drawn on (data/mapframe.yaml); gandiol unless said otherwise.
+nodes:
+  - id: sunukeur
+    name: Sunukeur
+    hub: true
+    lat: 15.89078
+    lon: -16.50613
+  - id: north
+    name: ""
+    lat: 15.89544
+    lon: -16.50467
+  - id: north-east
+    name: ""
+    lat: 15.89369
+    lon: -16.50213
+  - id: south
+    name: ""
+    lat: 15.87585
+    lon: -16.50504
+  # Avenue Jean Mermoz, Pointe Nord, next to the RTS: the pin on jangkom.hahatay.org.
+  - id: jangkom
+    name: Jangkom
+    frame: saint_louis
+    lat: 16.03703
+    lon: -16.50224
+
+# Radio links inside Gandiol, as [from, to].
+links:
+  - [sunukeur, north]
+  - [north, north-east]
+  - [sunukeur, south]
+
+# Sites joined over the internet through the VPN, not by radio.
+vpn:
+  - [jangkom, sunukeur]

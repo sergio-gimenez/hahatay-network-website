@@ -1,0 +1,116 @@
+{{/* Home page (params.homepage.layout = "custom"): the network on a map, the figures from the
+  progress report, latest news, guides and travel blog, and who supports the project.
+  Data in data/home.yaml and data/network.yaml; text in i18n/. Styles in assets/css/custom.css. */}}
+{{- $home := hugo.Data.home }}
+{{- $en := hugo.Sites.Default }}
+{{- $report := $en.GetPage $home.report }}
+{{- $guides := where $en.RegularPages "Section" "technical_docs" }}
+
+<section class="hh-hero">
+  <div class="hh-hero-text">
+    <p class="hh-greeting"><span lang="wo">Dalal ak jàmm</span> · {{ i18n "home.greeting" }}</p>
+    <h1>{{ i18n "home.title" }}</h1>
+    <p class="hh-lead">{{ i18n "home.lead" }}</p>
+    <p class="hh-actions">
+      {{ with site.GetPage "/about" }}<a class="hh-btn" href="{{ .RelPermalink }}">{{ i18n "home.cta_about" }}</a>{{ end }}
+      {{ with site.GetPage "/news_articles" }}<a class="hh-btn hh-btn-ghost" href="{{ .RelPermalink }}">{{ i18n "home.cta_news" }}</a>{{ end }}
+    </p>
+  </div>
+  <figure class="hh-hero-map">
+    {{ partial "home/map.html" . }}
+    <figcaption>
+      <span class="hh-key hh-key-link" aria-hidden="true"></span>{{ i18n "home.map.link" }}
+      <span class="hh-key hh-key-vpn" aria-hidden="true"></span>{{ i18n "home.map.vpn" }}
+      <span class="hh-key hh-key-node" aria-hidden="true"></span>{{ i18n "home.map.site" }}
+      <a class="hh-credit" href="https://www.openstreetmap.org/copyright" rel="noopener">© OpenStreetMap</a>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="hh-stats hh-bleed" aria-labelledby="hh-stats-title">
+  <h2 id="hh-stats-title" class="hh-kicker">{{ i18n "home.stats.title" }}</h2>
+  <dl>
+    {{- range $home.stats }}
+      <div>
+        <dt>{{ i18n (printf "home.stats.%s" .key) }}</dt>
+        <dd>{{ .value }}{{ with .unit }}<small>{{ . }}</small>{{ end }}</dd>
+      </div>
+    {{- end }}
+    <div>
+      <dt>{{ i18n "home.stats.guides" }}</dt>
+      <dd>{{ len $guides }}</dd>
+    </div>
+  </dl>
+  {{- with $report }}
+    <p class="hh-source">{{ i18n "home.stats.source" }} <a href="{{ .RelPermalink }}" hreflang="en">{{ .Title }}</a></p>
+  {{- end }}
+</section>
+
+{{- $news := first 3 (where site.RegularPages "Section" "news_articles").ByDate.Reverse }}
+{{- with $news }}
+  <section class="hh-section" aria-labelledby="hh-news-title">
+    <header class="hh-section-head">
+      <h2 id="hh-news-title">{{ i18n "home.news.title" }}</h2>
+      {{ with site.GetPage "/news_articles" }}<a href="{{ .RelPermalink }}">{{ i18n "home.news.all" }} →</a>{{ end }}
+    </header>
+    <ul class="hh-cards">
+      {{- range . }}
+        {{- $img := .Resources.GetMatch (.Params.thumbnail | default "*thumb*") }}
+        <li>
+          <a class="hh-card" href="{{ .RelPermalink }}">
+            {{- with $img }}
+              {{- if eq .MediaType.SubType "svg" }}
+                <img src="{{ .RelPermalink }}" alt="" loading="lazy">
+              {{- else }}
+                {{- $small := .Fill "480x300 webp q70 Smart" }}
+                <img src="{{ $small.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="" loading="lazy">
+              {{- end }}
+            {{- end }}
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "functions/date.html" .Date }}</time>
+            <h3>{{ .Title | emojify }}</h3>
+          </a>
+        </li>
+      {{- end }}
+    </ul>
+  </section>
+{{- end }}
+
+<section class="hh-section hh-pair">
+  <article class="hh-panel" aria-labelledby="hh-guides-title">
+    <h2 id="hh-guides-title">{{ i18n "home.guides.title" }}</h2>
+    <p>{{ i18n "home.guides.body" }}</p>
+    <ul class="hh-list">
+      {{- range $home.guides }}
+        {{- with $en.GetPage . }}
+          <li><a href="{{ .RelPermalink }}" hreflang="en">{{ .Title }}</a></li>
+        {{- end }}
+      {{- end }}
+    </ul>
+    {{ with $en.GetPage "/technical_docs" }}<a class="hh-more" href="{{ .RelPermalink }}" hreflang="en">{{ i18n "home.guides.all" (dict "Count" (len $guides)) }} →</a>{{ end }}
+  </article>
+  {{- with site.GetPage "/travel_blog/2025" }}
+    <a class="hh-panel hh-blog" href="{{ .RelPermalink }}" aria-labelledby="hh-blog-title">
+      {{- with .Resources.GetMatch "cover*" }}
+        {{- $img := .Fill "640x360 webp q62 Smart" }}
+        <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="" loading="lazy">
+      {{- end }}
+      <h2 id="hh-blog-title">{{ i18n "home.blog.title" }}</h2>
+      <p>{{ i18n "home.blog.body" }}</p>
+      <span class="hh-more">{{ i18n "home.blog.read" }} →</span>
+    </a>
+  {{- end }}
+</section>
+
+<section class="hh-section hh-support" aria-labelledby="hh-support-title">
+  <h2 id="hh-support-title" class="hh-kicker">{{ i18n "home.support" }}</h2>
+  <ul class="hh-logos">
+    {{- range $home.supporters }}
+      {{- $logo := resources.Get (printf "img/supporters/%s" .logo) | fingerprint }}
+      {{- $w := math.Round (div (mul .height $logo.Width) (float $logo.Height)) }}
+      <li>
+        <a class="hh-logo" href="{{ .url }}" rel="noopener" aria-label="{{ .name }}" title="{{ .name }}"
+          style="{{ printf "--logo:url(%s);width:%.0fpx;height:%dpx" $logo.RelPermalink $w .height | safeCSS }}"></a>
+      </li>
+    {{- end }}
+  </ul>
+</section>

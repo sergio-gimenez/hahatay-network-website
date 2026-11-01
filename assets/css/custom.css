@@ -1,0 +1,597 @@
+/* Hahatay Network on top of Congo: heading font, brand mark, home page (map, figures, cards) and the
+   page-weight line in the footer. Congo's Tailwind is precompiled, so new components are plain CSS
+   with an hh- prefix. Colours come from the scheme (assets/css/schemes/hahatay.css). */
+
+/* Bricolage Grotesque 700, headings only; body text stays on the system font, which costs nothing
+   to download. latin-ext loads only when a page uses it (e.g. ŋ in Wolof). */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/fonts/bricolage-grotesque-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/fonts/bricolage-grotesque-latin-ext-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  --hh-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --hh-ink: rgb(var(--color-neutral-900));
+  --hh-muted: rgb(var(--color-neutral-600));
+  --hh-rule: rgb(var(--color-neutral-200));
+  --hh-accent: rgb(var(--color-primary-600));
+  --hh-yellow: rgb(var(--color-secondary-400));
+  --hh-band: rgb(var(--color-neutral-800));
+  --hh-panel: rgb(var(--color-neutral-50));
+  /* map */
+  --hh-land: rgb(var(--color-neutral));
+  --hh-water: #bcd1d0;
+  --hh-swell: #8fb1b1;
+  --hh-sand: #ecdfc2;
+  --hh-green: #dfe2c8;
+  --hh-shore: #c8b287;
+}
+.dark {
+  --hh-ink: rgb(var(--color-neutral));
+  --hh-muted: rgb(var(--color-neutral-400));
+  --hh-rule: rgb(var(--color-neutral-700));
+  --hh-accent: rgb(var(--color-primary-400));
+  --hh-band: rgb(var(--color-neutral-900));
+  --hh-panel: rgb(var(--color-neutral-900));
+  --hh-land: rgb(var(--color-neutral-800));
+  --hh-water: #1f3437;
+  --hh-swell: #3a585b;
+  --hh-sand: #4a3d2a;
+  --hh-green: #333a28;
+  --hh-shore: #6e5a39;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--hh-display);
+}
+
+/* Full-width background for a block inside Congo's centred column, without horizontal overflow. */
+.hh-bleed {
+  background: var(--hh-band);
+  box-shadow: 0 0 0 100vmax var(--hh-band);
+  clip-path: inset(0 -100vmax);
+}
+
+/* ── brand mark (layouts/partials/logo.html) ─────────────────────────────── */
+.hh-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--hh-display);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.hh-mark {
+  width: 30px;
+  height: 30px;
+  flex: none;
+}
+.hh-mark path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.hh-mark circle {
+  fill: rgb(var(--color-primary-600));
+}
+.hh-mark .hh-mark-hub {
+  fill: var(--hh-yellow);
+  stroke: rgb(var(--color-primary-700));
+  stroke-width: 1.6;
+}
+
+/* ── hero ─────────────────────────────────────────────────────────────────── */
+.hh-hero {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 0.5rem 0 3.5rem;
+}
+@media (min-width: 900px) {
+  .hh-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3.5rem;
+  }
+}
+.hh-greeting {
+  margin: 0 0 1.1rem;
+  font-size: 0.95rem;
+  color: var(--hh-muted);
+}
+.hh-greeting span {
+  font-family: var(--hh-display);
+  font-size: 1.1rem;
+  color: var(--hh-accent);
+}
+.hh-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  color: var(--hh-ink);
+  text-wrap: balance;
+}
+.hh-lead {
+  max-width: 46ch;
+  margin: 1.25rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--hh-muted);
+}
+.hh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+}
+.hh-btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgb(var(--color-primary-700));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.hh-btn:hover {
+  background: rgb(var(--color-primary-800));
+}
+.hh-btn-ghost {
+  background: transparent;
+  border-color: currentColor;
+  color: var(--hh-ink);
+}
+.hh-btn-ghost:hover {
+  background: rgb(var(--color-neutral-100));
+}
+.dark .hh-btn {
+  background: var(--hh-yellow);
+  color: rgb(var(--color-neutral-900));
+}
+.dark .hh-btn:hover {
+  background: rgb(var(--color-secondary-300));
+}
+.dark .hh-btn-ghost {
+  background: transparent;
+  color: var(--hh-ink);
+}
+.dark .hh-btn-ghost:hover {
+  background: rgb(var(--color-neutral-700));
+}
+
+/* ── network map (layouts/partials/home/map.html) ────────────────────────── */
+.hh-hero-map {
+  margin: 0;
+}
+.hh-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 76vh;
+  border: 1px solid var(--hh-rule);
+  border-radius: 1rem;
+}
+/* OpenStreetMap layers (tools/map.py → layouts/partials/home/map-osm-*.html). */
+.hh-land {
+  fill: var(--hh-land);
+}
+.hh-ocean,
+.hh-water {
+  fill: var(--hh-water);
+  stroke: var(--hh-shore);
+  stroke-width: 0.6;
+}
+.hh-sand {
+  fill: var(--hh-sand);
+}
+.hh-green {
+  fill: var(--hh-green);
+}
+.hh-road,
+.hh-road-main {
+  fill: none;
+  stroke: var(--hh-shore);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.hh-road {
+  stroke-width: 0.6;
+  opacity: 0.7;
+}
+.hh-road-main {
+  stroke-width: 1.6;
+}
+.hh-homes {
+  fill: none;
+  stroke: var(--hh-muted);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  opacity: 0.35;
+}
+.hh-geo text {
+  font: 600 8px/1 ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: var(--hh-muted);
+}
+.hh-geo .hh-geo-sea {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  fill: var(--hh-swell);
+}
+.dark .hh-geo .hh-geo-sea {
+  fill: #6d9194;
+}
+.hh-geo .hh-geo-town {
+  font: 700 18px/1 var(--hh-display);
+  letter-spacing: 0;
+  text-transform: none;
+  text-anchor: start;
+  fill: var(--hh-ink);
+}
+.hh-north path {
+  fill: var(--hh-muted);
+}
+.hh-north text {
+  font: 600 9px/1 ui-sans-serif, system-ui, sans-serif;
+  text-anchor: middle;
+  fill: var(--hh-muted);
+}
+/* Saint-Louis inset: a framed map at a smaller scale, set apart from the ocean by a halo. */
+.hh-inset-halo {
+  fill: none;
+  stroke: var(--hh-land);
+  stroke-width: 6;
+}
+.hh-inset-frame {
+  fill: none;
+  stroke: var(--hh-muted);
+  stroke-width: 0.8;
+}
+.hh-inset-name {
+  font: 700 11px/1 var(--hh-display);
+  fill: var(--hh-ink);
+  paint-order: stroke;
+  stroke: var(--hh-land);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+/* A VPN joins sites over the internet: drawn as a plain dashed line, unlike the radio links. */
+.hh-vpn {
+  fill: none;
+  stroke: var(--hh-muted);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+}
+.hh-vpn-label {
+  font: 600 8px/1 ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.16em;
+  text-anchor: middle;
+  fill: var(--hh-muted);
+}
+/* Radio links: dots that travel along each link. */
+.hh-link {
+  fill: none;
+  stroke: var(--hh-accent);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-dasharray: 0.5 6.5;
+  animation: hh-flow 1.4s linear infinite;
+}
+@keyframes hh-flow {
+  to {
+    stroke-dashoffset: -14;
+  }
+}
+.hh-node circle {
+  fill: var(--hh-land);
+  stroke: var(--hh-accent);
+  stroke-width: 2.4;
+}
+.hh-hub circle {
+  fill: var(--hh-yellow);
+  stroke: rgb(var(--color-primary-700));
+}
+.hh-hub .hh-pulse {
+  fill: none;
+  stroke: var(--hh-accent);
+  stroke-width: 1.5;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hh-pulse 2.6s ease-out infinite;
+}
+@keyframes hh-pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+.hh-labels text {
+  font: 700 12px/1 var(--hh-display);
+  fill: var(--hh-ink);
+  paint-order: stroke;
+  stroke: var(--hh-land);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hh-link,
+  .hh-hub .hh-pulse {
+    animation: none;
+  }
+}
+.hh-hero-map figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--hh-muted);
+}
+.hh-key {
+  display: inline-block;
+}
+/* Map data credit, required by OpenStreetMap's licence (ODbL). */
+.hh-credit {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+}
+.hh-credit:hover {
+  text-decoration: underline;
+}
+.hh-key-link {
+  width: 22px;
+  border-top: 3px dotted var(--hh-accent);
+}
+.hh-key-vpn {
+  width: 22px;
+  margin-left: 0.6rem;
+  border-top: 1.5px dashed var(--hh-muted);
+}
+.hh-key-node {
+  width: 11px;
+  height: 11px;
+  margin-left: 0.6rem;
+  border: 2px solid var(--hh-accent);
+  border-radius: 50%;
+}
+
+/* ── figures band ─────────────────────────────────────────────────────────── */
+.hh-stats {
+  padding: 3.5rem 0;
+  color: rgb(var(--color-neutral-100));
+}
+.hh-kicker {
+  margin: 0 0 1.75rem;
+  font: 600 0.8rem/1.2 ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hh-yellow);
+}
+.hh-stats dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem 1.5rem;
+  margin: 0;
+}
+.hh-stats dl div {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(255 255 255 / 0.16);
+}
+.hh-stats dd {
+  margin: 0;
+  font: 700 clamp(2.2rem, 3.8vw, 3rem)/1 var(--hh-display);
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.hh-stats dd small {
+  margin-left: 0.15em;
+  font-size: 0.45em;
+  letter-spacing: 0;
+  color: var(--hh-yellow);
+}
+.hh-stats dt {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgb(var(--color-neutral-300));
+}
+.hh-source {
+  margin: 2.25rem 0 0;
+  font-size: 0.85rem;
+  color: rgb(var(--color-neutral-400));
+}
+.hh-source a {
+  color: inherit;
+}
+
+/* ── sections ─────────────────────────────────────────────────────────────── */
+.hh-section {
+  padding-top: 4rem;
+}
+.hh-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.hh-section h2:not(.hh-kicker) {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  line-height: 1.1;
+  color: var(--hh-ink);
+}
+.hh-section-head a,
+.hh-more {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--hh-accent);
+  text-decoration: none;
+}
+.hh-section-head a:hover,
+a.hh-more:hover,
+.hh-blog:hover .hh-more {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hh-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hh-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.hh-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  background: rgb(var(--color-neutral-100));
+}
+.hh-card time {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--hh-muted);
+}
+.hh-card h3 {
+  margin: 0.3rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: var(--hh-ink);
+}
+.hh-card:hover h3 {
+  text-decoration: underline;
+  text-decoration-color: var(--hh-accent);
+  text-underline-offset: 3px;
+}
+
+.hh-pair {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 900px) {
+  .hh-pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.hh-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1.75rem;
+  border: 1px solid var(--hh-rule);
+  border-radius: 1rem;
+  background: var(--hh-panel);
+  color: inherit;
+  text-decoration: none;
+}
+.hh-panel p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--hh-muted);
+}
+.hh-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hh-list li {
+  border-top: 1px solid var(--hh-rule);
+}
+.hh-list a {
+  display: block;
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  color: var(--hh-ink);
+  text-decoration: none;
+}
+.hh-list a:hover {
+  color: var(--hh-accent);
+}
+.hh-more {
+  margin-top: auto;
+}
+.hh-blog img {
+  width: calc(100% + 3.5rem);
+  max-width: none;
+  margin: -1.75rem -1.75rem 0.25rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.hh-support {
+  padding-bottom: 1rem;
+}
+.hh-support .hh-kicker {
+  margin-bottom: 1rem;
+  color: var(--hh-muted);
+}
+.hh-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.75rem 3rem;
+  margin: 0;
+  padding: 0.5rem 0 0;
+  list-style: none;
+}
+/* The logo file is only a mask; the colour comes from the theme. */
+.hh-logo {
+  display: block;
+  max-width: 100%;
+  background: var(--hh-muted);
+  -webkit-mask: var(--logo) center / contain no-repeat;
+  mask: var(--logo) center / contain no-repeat;
+  transition: background-color 0.2s;
+}
+.hh-logo:hover,
+.hh-logo:focus-visible {
+  background: var(--hh-ink);
+}
+
+/* ── footer: what this visit downloaded (layouts/partials/extend-footer.html) ── */
+.hh-weight {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: rgb(var(--color-neutral-500));
+}

@@ -1,0 +1,41 @@
+# Textos añadidos a los de Congo (portada, pie). Las claves propias de Congo siguen viniendo del tema.
+home:
+  greeting: "bienvenida, en wolof"
+  title: "Internet asequible para Gandiol, construida con su comunidad"
+  lead: "Una red comunitaria hecha por voluntarios en el norte de Senegal. Desde 2021, radioenlaces, una malla wifi y software libre conectan los espacios de Hahatay."
+  cta_about: "Cómo funciona"
+  cta_news: "Últimas noticias"
+  map:
+    title: "Mapa de la red comunitaria de Hahatay"
+    desc: "Mapa de Gandiol, en la desembocadura del río Senegal: radioenlaces unen los espacios de Hahatay, con Sunukeur como nodo central. Un recuadro muestra Saint-Louis, 16 km al norte, donde Jangkom se une a la red por VPN."
+    ocean: "Océano Atlántico"
+    river: "Río Senegal"
+    node: "Punto de la red"
+    hub: "nodo central"
+    link: "radioenlace"
+    vpn: "VPN"
+    site: "punto de la red"
+  stats:
+    title: "La red en cifras"
+    speed: "de bajada de media, ene–abr 2026 (6,5 Mbps a principios de 2025)"
+    devices: "dispositivos conectados en un solo día, en el pico"
+    cost: "coste estimado por persona y mes"
+    laptops: "portátiles donados por Labdoo"
+    guides: "guías técnicas abiertas (en inglés)"
+    source: "Fuente:"
+  news:
+    title: "Últimas noticias"
+    all: "Todas las noticias"
+  guides:
+    title: "Monta tu propia red"
+    body: "Todo lo que desplegamos queda documentado para que otras comunidades puedan hacer lo mismo: OpenWrt en routers baratos, malla wifi, VPN y monitorización. Las guías están en inglés."
+    all: "Las {{ .Count }} guías"
+  blog:
+    title: "Diario de viaje"
+    body: "Tres semanas en Gandiol, Saint-Louis y Dakar, día a día: antenas, OpenWISP, la nueva sala de informática y un partido de fútbol en Sunukeur."
+    read: "Leer el diario"
+  support: "Con el apoyo de"
+
+footer:
+  light: "Pensada para cargar bien con poca conexión."
+  weight: "Esta visita ha descargado {kb} KB."

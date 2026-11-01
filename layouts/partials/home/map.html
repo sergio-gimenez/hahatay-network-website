@@ -1,0 +1,93 @@
+{{/* The network on a map of Gandiol (north up), with Saint-Louis as an inset in the ocean corner.
+  The geography is OpenStreetMap, drawn by tools/map.py into home/map-osm-<frame>.html; the frames
+  are in data/mapframe.yaml. Nodes, links and labels are placed here from lat/lon. Colours are CSS
+  custom properties (assets/css/custom.css), so the map follows light and dark mode. */}}
+{{- $f := hugo.Data.mapframe.gandiol }}
+{{- $sl := hugo.Data.mapframe.saint_louis }}
+{{- $net := hugo.Data.network }}
+{{- /* Each frame and where its top-left corner sits on the map. */}}
+{{- $inset := dict "x" 10 "y" 10 }}
+{{- $at := dict "gandiol" (dict "f" $f "x" 0 "y" 0) "saint_louis" (dict "f" $sl "x" $inset.x "y" $inset.y) }}
+{{- $pos := dict }}
+{{- range $net.nodes }}
+  {{- $m := index $at (.frame | default "gandiol") }}
+  {{- $x := add $m.x (mul (sub .lon $m.f.west) (div $m.f.width (sub $m.f.east $m.f.west))) }}
+  {{- $y := add $m.y (mul (sub $m.f.north .lat) (div $m.f.height (sub $m.f.north $m.f.south))) }}
+  {{- $pos = merge $pos (dict .id (dict "x" $x "y" $y)) }}
+{{- end }}
+{{- $px := div $f.width (sub $f.east $f.west) }}
+{{- $py := div $f.height (sub $f.north $f.south) }}
+{{- /* Place names: [lat, lon, text, class, rotation]. */}}
+{{- $places := slice
+  (slice 15.8800 -16.5195 (i18n "home.map.ocean") "hh-geo-sea" -90)
+  (slice 15.8840 -16.5141 "Langue de Barbarie" "" -84)
+  (slice 15.8760 -16.5116 (i18n "home.map.river") "" -80)
+  (slice 15.8870 -16.4990 "Gandiol" "hh-geo-town" 0)
+}}
+<svg class="hh-map" viewBox="0 0 {{ $f.width }} {{ $f.height }}" role="img" aria-labelledby="hh-map-title hh-map-desc">
+  <title id="hh-map-title">{{ i18n "home.map.title" }}</title>
+  <desc id="hh-map-desc">{{ i18n "home.map.desc" }}</desc>
+  <rect class="hh-land" width="{{ $f.width }}" height="{{ $f.height }}" />
+  {{ partial "home/map-osm-gandiol.html" . }}
+
+  <g class="hh-geo">
+    {{- range $places }}
+      {{- $x := mul (sub (index . 1) $f.west) $px }}
+      {{- $y := mul (sub $f.north (index . 0)) $py }}
+      <text{{ with index . 3 }} class="{{ . }}"{{ end }} transform="translate({{ printf "%.1f %.1f" $x $y }}){{ with index . 4 }} rotate({{ . }}){{ end }}">{{ index . 2 }}</text>
+    {{- end }}
+  </g>
+  <g class="hh-north" transform="translate({{ sub $f.width 22 }} {{ sub $f.height 26 }})">
+    <path d="M0 -14L5 4L0 0L-5 4Z" />
+    <text y="18">N</text>
+  </g>
+
+  {{- /* Saint-Louis, at its own scale: a nested svg crops the geometry to the frame. */}}
+  <g class="hh-inset">
+    <rect class="hh-inset-halo" x="{{ $inset.x }}" y="{{ $inset.y }}" width="{{ $sl.width }}" height="{{ $sl.height }}" />
+    <svg x="{{ $inset.x }}" y="{{ $inset.y }}" width="{{ $sl.width }}" height="{{ $sl.height }}" viewBox="0 0 {{ $sl.width }} {{ $sl.height }}">
+      <rect class="hh-land" width="{{ $sl.width }}" height="{{ $sl.height }}" />
+      {{ partial "home/map-osm-saint-louis.html" . }}
+    </svg>
+    <rect class="hh-inset-frame" x="{{ $inset.x }}" y="{{ $inset.y }}" width="{{ $sl.width }}" height="{{ $sl.height }}" />
+    <text class="hh-inset-name" x="{{ add $inset.x 6 }}" y="{{ sub (add $inset.y $sl.height) 7 }}">Saint-Louis</text>
+  </g>
+
+  {{- /* Sites that reach each other over the internet: a VPN, not a radio link. */}}
+  <g class="hh-vpns">
+    {{- range $net.vpn }}
+      {{- $a := index $pos (index . 0) }}
+      {{- $b := index $pos (index . 1) }}
+      {{- $mx := div (add $a.x $b.x) 2 }}
+      {{- $my := div (add $a.y $b.y) 2 }}
+      <path class="hh-vpn" d="M{{ printf "%.1f %.1f" $a.x $a.y }}Q{{ printf "%.1f %.1f" (add $mx 18) (sub $my 24) }} {{ printf "%.1f %.1f" $b.x $b.y }}" />
+      <text class="hh-vpn-label" x="{{ printf "%.1f" (add $mx 9) }}" y="{{ printf "%.1f" (sub $my 23) }}">VPN</text>
+    {{- end }}
+  </g>
+  <g class="hh-links">
+    {{- range $net.links }}
+      {{- $a := index $pos (index . 0) }}
+      {{- $b := index $pos (index . 1) }}
+      <path class="hh-link" d="M{{ printf "%.1f %.1f" $a.x $a.y }}L{{ printf "%.1f %.1f" $b.x $b.y }}" />
+    {{- end }}
+  </g>
+  <g class="hh-nodes">
+    {{- range $net.nodes }}
+      {{- $p := index $pos .id }}
+      {{- $c := printf `cx="%.1f" cy="%.1f"` $p.x $p.y | safeHTMLAttr }}
+      <g class="hh-node{{ if .hub }} hh-hub{{ end }}" data-node="{{ .id }}">
+        <title>{{ .name | default (i18n "home.map.node") }}{{ if .hub }} · {{ i18n "home.map.hub" }}{{ end }}</title>
+        {{- if .hub }}<circle class="hh-pulse" {{ $c }} r="8" />{{ end }}
+        <circle {{ $c }} r="{{ cond .hub 7 5 }}" />
+      </g>
+    {{- end }}
+  </g>
+  <g class="hh-labels">
+    {{- range $net.nodes }}
+      {{- if .name }}
+        {{- $p := index $pos .id }}
+        <text x="{{ printf "%.1f" (add $p.x 12) }}" y="{{ printf "%.1f" (add $p.y 4) }}">{{ .name }}</text>
+      {{- end }}
+    {{- end }}
+  </g>
+</svg>

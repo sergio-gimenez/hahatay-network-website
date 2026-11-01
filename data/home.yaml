@@ -1,0 +1,47 @@
+# Home page content that is not prose (layouts/partials/home/custom.html); labels live in i18n/.
+# The figures come from the progress report of May 2026. The report and the technical guides are
+# only in English, so the Spanish and French home pages link to the English versions.
+report: /news_articles/20260502-hahatay-network-performance-report
+
+stats:
+  - key: speed
+    value: "17"
+    unit: Mbps
+  - key: devices
+    value: "80"
+  - key: cost
+    value: "−35"
+    unit: "%"
+  - key: laptops
+    value: "30+"
+
+# Guides shown on the home page, as content paths under technical_docs/.
+guides:
+  - /technical_docs/Setting-Up-Mesh-Network-with-OpenWrt-V2
+  - /technical_docs/Monitor-the-Community-Network-with-Zabbix
+  - /technical_docs/Deploying-your-own-Wireguard-VPN-Server-with-2FA
+  - /technical_docs/Redundant-Synchronised-Local-Pi-Hole-DNS-Setup
+
+# Logos are one-colour masks in assets/img/supporters/ (ink = opaque), tinted by CSS so they follow
+# light and dark mode. `height` is the display height in px, set by eye to balance the five.
+supporters:
+  - name: AUCOOP
+    url: https://aucoop.upc.edu
+    logo: aucoop.png
+    height: 24
+  - name: Centre de Cooperació per al Desenvolupament (UPC)
+    url: https://ccd.upc.edu
+    logo: upc.png
+    height: 38
+  - name: Internet Society
+    url: https://www.internetsociety.org
+    logo: isoc.png
+    height: 38
+  - name: Internet Society Capítol Català
+    url: https://www.isoc.cat
+    logo: isoc-cat.png
+    height: 34
+  - name: Labdoo
+    url: https://labdoo.org
+    logo: labdoo.png
+    height: 28
