@@ -11,22 +11,22 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "🤔 Nousatres"
+  name = "À propos"
   pageRef = "about"
   weight = 10
 
 [[main]]
-  name = "📰 Actualités"
-  pageRef = "news"
+  name = "Actualités"
+  pageRef = "news_articles"
   weight = 20
 
 [[main]]
-  name = "🛠 Documentation technique"
+  name = "Guides"
   pageRef = "technical_docs"
   weight = 30
 
 [[main]]
-  name = "🇸🇳 Blog de Voyage"
+  name = "Carnet de voyage"
   pageRef = "travel_blog"
   weight = 40
 
