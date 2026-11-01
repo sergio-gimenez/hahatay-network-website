@@ -8,6 +8,8 @@ defaultContentLanguageInSubdir = true
 
 enableRobotsTXT = true
 summaryLength = 0
+# The server has one CPU: with an empty image cache, a page full of photos takes over a minute.
+timeout = "10m"
 
 [pagination]
 pagerSize = 10

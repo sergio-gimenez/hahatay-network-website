@@ -1,6 +1,6 @@
-languageCode = "fr"
-languageName = "Français 🇫🇷"
-languageDirection = "ltr"
+locale = "fr"
+label = "Français 🇫🇷"
+direction = "ltr"
 weight = 3
 
 title = "Hahatay Network"
