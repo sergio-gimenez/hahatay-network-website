@@ -1,0 +1,15 @@
+# Written by tools/map.py: each map's frame (degrees) and its size in SVG units.
+gandiol:
+  south: 15.87
+  west: -16.523
+  north: 15.901
+  east: -16.493
+  width: 400
+  height: 429.7
+saint_louis:
+  south: 16.01
+  west: -16.514
+  north: 16.046
+  east: -16.484
+  width: 112
+  height: 139.8

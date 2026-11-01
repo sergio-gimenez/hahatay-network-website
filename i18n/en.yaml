@@ -1,0 +1,41 @@
+# Site strings added on top of Congo's (home page, footer). Congo's own keys still come from the theme.
+home:
+  greeting: "welcome, in Wolof"
+  title: "Affordable internet for Gandiol, built with its community"
+  lead: "A volunteer-run community network in northern Senegal. Since 2021, radio links, Wi‑Fi mesh and open-source software have connected the spaces of Hahatay."
+  cta_about: "How it works"
+  cta_news: "Latest news"
+  map:
+    title: "Map of the Hahatay community network"
+    desc: "Map of Gandiol, at the mouth of the Senegal River: radio links join the spaces of Hahatay, with Sunukeur as the hub. An inset shows Saint-Louis, 16 km to the north, where Jangkom joins the network over a VPN."
+    ocean: "Atlantic Ocean"
+    river: "Senegal River"
+    node: "Network site"
+    hub: "hub"
+    link: "radio link"
+    vpn: "VPN"
+    site: "network site"
+  stats:
+    title: "The network in figures"
+    speed: "average download, Jan–Apr 2026 (6.5 Mbps in early 2025)"
+    devices: "devices connected in a single day, at the peak"
+    cost: "estimated cost per person per month"
+    laptops: "laptops donated by Labdoo"
+    guides: "open technical guides"
+    source: "Source:"
+  news:
+    title: "Latest news"
+    all: "All news"
+  guides:
+    title: "Build your own network"
+    body: "Everything we deploy is documented so other communities can do the same: OpenWrt on low-cost routers, Wi‑Fi mesh, VPN, monitoring."
+    all: "All {{ .Count }} guides"
+  blog:
+    title: "Travel blog"
+    body: "Three weeks in Gandiol, Saint-Louis and Dakar, day by day: antennas, OpenWISP, the new computer room and a football match in Sunukeur."
+    read: "Read the diary"
+  support: "With the support of"
+
+footer:
+  light: "Built to load well on a slow connection."
+  weight: "This visit downloaded {kb} KB."

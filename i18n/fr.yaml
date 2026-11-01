@@ -1,0 +1,41 @@
+# Textes ajoutés à ceux de Congo (accueil, pied de page). Les clés de Congo viennent toujours du thème.
+home:
+  greeting: "bienvenue, en wolof"
+  title: "Un internet abordable pour Gandiol, construit avec sa communauté"
+  lead: "Un réseau communautaire porté par des bénévoles dans le nord du Sénégal. Depuis 2021, des liaisons radio, un maillage Wi‑Fi et des logiciels libres relient les espaces de Hahatay."
+  cta_about: "Comment ça marche"
+  cta_news: "Actualités"
+  map:
+    title: "Carte du réseau communautaire de Hahatay"
+    desc: "Carte de Gandiol, à l'embouchure du fleuve Sénégal : des liaisons radio relient les espaces de Hahatay, avec Sunukeur comme nœud central. Un encadré montre Saint-Louis, à 16 km au nord, où Jangkom rejoint le réseau par VPN."
+    ocean: "Océan Atlantique"
+    river: "Fleuve Sénégal"
+    node: "Point du réseau"
+    hub: "nœud central"
+    link: "liaison radio"
+    vpn: "VPN"
+    site: "point du réseau"
+  stats:
+    title: "Le réseau en chiffres"
+    speed: "de débit descendant moyen, janv.–avr. 2026 (6,5 Mbps début 2025)"
+    devices: "appareils connectés en une seule journée, au pic"
+    cost: "coût estimé par personne et par mois"
+    laptops: "ordinateurs portables donnés par Labdoo"
+    guides: "guides techniques ouverts (en anglais)"
+    source: "Source :"
+  news:
+    title: "Dernières actualités"
+    all: "Toutes les actualités"
+  guides:
+    title: "Montez votre propre réseau"
+    body: "Tout ce que nous déployons est documenté pour que d'autres communautés puissent faire de même : OpenWrt sur des routeurs bon marché, maillage Wi‑Fi, VPN, supervision. Les guides sont en anglais."
+    all: "Les {{ .Count }} guides"
+  blog:
+    title: "Carnet de voyage"
+    body: "Trois semaines à Gandiol, Saint-Louis et Dakar, jour après jour : antennes, OpenWISP, la nouvelle salle informatique et un match de foot à Sunukeur."
+    read: "Lire le carnet"
+  support: "Avec le soutien de"
+
+footer:
+  light: "Conçu pour bien charger avec une connexion lente."
+  weight: "Cette visite a téléchargé {kb} Ko."

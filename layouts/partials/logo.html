@@ -1,0 +1,12 @@
+{{/* Overrides Congo's logo.html: a small network mark (a hub with radio waves linking two sites)
+  before the site title, drawn inline so it costs no extra request. */}}
+<a class="hh-brand" rel="me" href="{{ "" | relLangURL }}">
+  <svg class="hh-mark" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M10 9.5a8.5 8.5 0 0 1 12 0M13 12a5 5 0 0 1 6 0" />
+    <path d="M6 26L16 16L26 24" />
+    <circle cx="6" cy="26" r="2.6" />
+    <circle cx="26" cy="24" r="2.6" />
+    <circle class="hh-mark-hub" cx="16" cy="16" r="3.4" />
+  </svg>
+  <span>{{ .Site.Title }}</span>
+</a>
