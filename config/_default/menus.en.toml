@@ -11,22 +11,22 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "🤔 About"
+  name = "About"
   pageRef = "about"
   weight = 10
 
 [[main]]
-  name = "📰 News & Articles"
+  name = "News"
   pageRef = "news_articles"
   weight = 20
 
 [[main]]
-  name = "🛠 Technical Docs"
+  name = "Guides"
   pageRef = "technical_docs"
   weight = 30
 
 [[main]]
-  name = "🇸🇳 Travel Blog"
+  name = "Travel blog"
   pageRef = "travel_blog"
   weight = 40
 
